@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #f8f9d2;
+    background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+}
+
+:root {
+    --avatar: #dfff;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url();
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.nav_header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #d8dede;
+    background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+    height: 70px;
+    outline: none;
+    border: none;
+    border-bottom: 0.001rem solid rgb(141, 107, 119);
+    box-shadow: 0px 1px rgb(255, 222, 222);
+}
+
+.header {
+    display: flex;
+    width: 60rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .nav_logo {
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.nav_input {
+    width: 50%;
+    height: 35px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-basis: 15%;
+    margin-left: 10px;
+}
+
+.nav_input i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 8px;
+    margin-left: 1rem;
+    cursor: pointer;
+    opacity: 0.6;
+    font-size: small;
+}
+
+.nav_input input {
+    font-size: 0.8rem;
+    outline: none;
+    width: 100%;
+    padding: 10px 45px;
+    border-color: #d1f5f5;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav_menu {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 70%;
+}
+
+.nav_menu li {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 25px;
+    font-size: 1.8rem;
+    width: auto;
+}
+
+.nav_menu li:nth-child(2) {
+    margin-top: 5px;
+}
+
+.nav_menu li a i {
+    color: #252525;
+    transition: all 0.5s ease;
+}
+
+.nav_menu li a:hover i {
+    color: #1f1a1a;
+    opacity: 0.8;
+}
+
+.nav_menu li a img {
+    width: 40px;
+    margin-top: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.nav_menu li a img:hover {
+    opacity: 0.9;
+}
