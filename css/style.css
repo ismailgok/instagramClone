@@ -7,18 +7,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    height: 100vh;
+    height: auto;
     background-color: #f8f9d2;
     background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
 }
 
 :root {
     --avatar: #dfff;
-}
-
-@font-face {
-    font-family: myFirstFont;
-    src: url();
 }
 
 .container {
@@ -49,7 +44,7 @@ body {
 
 .header .nav_logo {
     margin-top: 10px;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 .nav_input {
@@ -58,7 +53,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    flex-grow: 2;
     flex-basis: 15%;
     margin-left: 10px;
 }
@@ -87,7 +82,7 @@ body {
 .nav_menu {
     flex-grow: 2;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row;
     height: 70%;
@@ -125,4 +120,286 @@ body {
 
 .nav_menu li a img:hover {
     opacity: 0.9;
+}
+
+
+/* 
+background-color: #f3e6e8;
+background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%); */
+
+
+/* CONTENT */
+
+.content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    max-width: 960px;
+    padding-bottom: 100px;
+}
+
+.content .content_cardBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 70%;
+}
+
+
+/* STORİES */
+
+.stories {
+    border-radius: 3px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #f3e6e8;
+    background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%);
+    border: 1px solid var(--avatar);
+    height: 100px;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.stories .stories_avatar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 80px;
+}
+
+.stories_avatar img {
+    padding: 2px;
+    border: 2px solid rgb(241, 88, 88);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.stories_avatar span {
+    margin-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4a4a4a;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+
+/* CARD POST */
+
+.card {
+    background: var(--avatar);
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_header {
+    position: relative;
+    margin: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.card_avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_avatar img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+    cursor: pointer;
+}
+
+.card_title {
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_title a {
+    text-decoration: none;
+    color: #272727;
+    font-weight: 500;
+}
+
+.card_title a:hover {
+    text-decoration: underline;
+}
+
+.card_dot {
+    right: 0;
+    top: 5px;
+    position: absolute;
+}
+
+.card_dot i {
+    color: #272727;
+}
+
+.line {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    border-bottom: 1px solid rgb(185, 212, 212);
+}
+
+.card_image {
+    background: var(--avatar);
+    display: flex;
+    margin-top: 10px;
+}
+
+.card_image img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+}
+
+
+/* card buttons */
+
+.card_buttons {
+    position: relative;
+    padding: 13px;
+    display: flex;
+    flex-direction: row;
+}
+
+.save {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+.save i {
+    font-size: 1.5rem;
+    color: #363636;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.save i:hover {
+    color: #181414;
+    opacity: 0.8;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons li {
+    list-style-type: none;
+    margin-left: 15px;
+}
+
+.buttons li:first-child {
+    margin-left: 5px
+}
+
+.buttons li a i {
+    color: #363636;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.buttons li a i:hover {
+    color: #181414;
+    opacity: 0.8;
+}
+
+
+/* other card */
+
+.card_other {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.card_other a {
+    text-decoration: none;
+    color: #272727;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card_other a:first-child {
+    margin-bottom: 5px;
+}
+
+.comment {
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+.card_other .comment a {
+    opacity: 0.77;
+    font-size: 0.86rem;
+}
+
+.card_other .date {
+    margin-top: 4px;
+    opacity: 0.77;
+    font-size: 0.76rem;
+}
+
+.do_comment {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    height: auto;
+    position: relative;
+}
+
+.do_comment .smile {
+    color: #272727
+}
+
+.do_comment .smile i {
+    margin: 0 auto;
+    font-size: 1.6rem;
+}
+
+.do_comment .input {
+    outline: none;
+    border: none;
+    display: flex;
+    margin-left: 15px;
+    flex-grow: 5;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+    background: #dff;
+}
+
+.do_comment .share {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-grow: 1;
+    color: #272727;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+
+/* PROFILE */
+
+.content_profile {
+    background: #ddd;
+    display: flex;
+    flex-basis: 30%;
 }
