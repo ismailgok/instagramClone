@@ -47,6 +47,10 @@ body {
     flex-grow: 2;
 }
 
+.hr {
+    opacity: 0.3;
+}
+
 .nav_input {
     width: 50%;
     height: 35px;
@@ -136,8 +140,10 @@ background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%); */
     justify-content: center;
     height: auto;
     width: 100%;
+    flex-direction: row;
     max-width: 960px;
     padding-bottom: 100px;
+    position: relative;
 }
 
 .content .content_cardBody {
@@ -145,6 +151,7 @@ background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%); */
     flex-direction: column;
     align-items: center;
     flex-basis: 70%;
+    transform: translate(-26%);
 }
 
 
@@ -399,7 +406,180 @@ background-image: linear-gradient(315deg, #f3e6e8 0%, #d5d0e5 74%); */
 /* PROFILE */
 
 .content_profile {
-    background: #ddd;
     display: flex;
     flex-basis: 30%;
+    position: fixed;
+    border-radius: 3px;
+    width: 305px;
+    height: 500px;
+    margin-top: 50px;
+    transform: translate(100%);
+    padding-left: 10px;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.content_profile .profile_header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile_header .avatar {
+    flex-basis: 10%;
+}
+
+.profile_header .avatar img {
+    border-radius: 50%;
+    width: 60px;
+}
+
+.profile_header .username {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    align-content: center;
+    flex-basis: 60%;
+}
+
+.profile_header .username a {
+    text-decoration: none;
+    color: #272727;
+    font-weight: 500;
+}
+
+.profile_header .username span {
+    font-weight: 400;
+    opacity: 0.6;
+}
+
+.profile_header .switch_btn {
+    display: flex;
+    justify-content: end;
+    align-content: flex-end;
+    margin-right: 10px;
+    flex-basis: 40%;
+}
+
+.profile_header .switch_btn a {
+    color: #0095f6;
+    font-weight: 400;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+
+/* other profile*/
+
+.profile_other {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.profile_other .commit {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.9rem;
+    justify-content: space-between;
+}
+
+.profile_other .commit a {
+    color: #272727;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.80rem;
+    font-variant: normal;
+    letter-spacing: 0.000000001em;
+}
+
+.profile_other .commit p {
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+
+/* commit profiles*/
+
+.profile_other .profile_card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0.2rem;
+    padding: 10px;
+    height: 3.2rem;
+}
+
+.profile_other .profile_card .avatar {
+    flex-grow: 1;
+}
+
+.profile_other .profile_card .avatar img {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile_other .profile_card .user {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.83rem;
+    margin-top: 2px;
+}
+
+.profile_other .profile_card .user a {
+    text-decoration: none;
+    color: #272727;
+    font-weight: 550;
+}
+
+.profile_other .profile_card .user a:hover {
+    text-decoration: underline;
+}
+
+.profile_other .profile_card .user span {
+    opacity: 0.7;
+    font-size: 0.8rem;
+}
+
+.profile_other .profile_card .follow_btn {
+    display: flex;
+    flex-grow: 0.1;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile_other .profile_card .follow_btn a {
+    text-decoration: none;
+    color: #0095f6;
+    font-size: 0.77rem;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.copyright li {
+    list-style-type: none;
+    margin: 2px;
+}
+
+.copyright li a {
+    color: #272727;
+    font-size: 0.63rem;
+    text-decoration: none;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.copyright span {
+    opacity: 0.3;
 }
