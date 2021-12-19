@@ -34,6 +34,7 @@
         justify-content: flex-start;
         margin-left: 60px;
         margin-top: 20px;
+        cursor: pointer;
     }
     
     .instagram i {
@@ -181,6 +182,7 @@
         padding: 5px 0px 5px 50px;
         outline: none;
         border: none;
+        font-size: 0.95rem;
         box-shadow: 1px 1px 10px 1px rgb(240, 235, 235);
     }
     
@@ -191,7 +193,7 @@
     }
     
     .search .mic {
-        margin-left: 270px;
+        margin-left: 35%;
     }
     
     .content .header .header_menu {
