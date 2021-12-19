@@ -163,6 +163,7 @@
         height: 100px;
         justify-content: center;
         align-items: center;
+        box-shadow: 1px 1px 7px #272727;
     }
     
     .content .header .search {
