@@ -11,6 +11,10 @@
         height: 100vh;
     }
     
+     :root {
+        --boldred: #f016;
+    }
+    
     .container {
         width: 100%;
         background: rgb(252, 81, 81);
@@ -23,7 +27,7 @@
         flex-direction: column;
         background: #fff;
         width: 450px;
-        box-shadow: 1px 1px 3px rgb(173, 170, 170);
+        box-shadow: 1px 0.2px 2px #dad8d8;
         z-index: 1;
     }
     
@@ -163,7 +167,8 @@
         height: 100px;
         justify-content: center;
         align-items: center;
-        box-shadow: 1px 1px 7px #272727;
+        box-shadow: 1px 0.4px 3px #9c9b9b;
+        z-index: 3;
     }
     
     .content .header .search {
@@ -293,18 +298,94 @@
         height: 100%;
         display: flex;
         flex-direction: row;
+        background: #000;
     }
     
     #main {
         display: flex;
-        background: rgba(63, 63, 63, 0);
         width: 75%;
         height: 100%;
-        background: #fd0a;
+        flex-direction: column;
+        /* background: #fd0a; */
+        background: #fff;
+        overflow: hidden;
     }
     
     .main .main_profile {
         display: flex;
         width: 25%;
         background: #f016;
+    }
+    
+    .main .main_box1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 22rem;
+    }
+    
+    .main_box1 .box_title {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .box_title h2 {
+        margin-left: 15px;
+        font-size: 1.3rem;
+        font-weight: 450;
+        flex-basis: 70%;
+        color: #272727;
+        opacity: 0.88;
+        letter-spacing: 0.03rem;
+    }
+    
+    .box_title span {
+        display: flex;
+        width: 180px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3px;
+        padding: 5px;
+        color: #c4c4c4;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+        opacity: 1;
+        background: rgb(255, 255, 253);
+    }
+    
+    .main_box1 .boxs {
+        display: flex;
+        padding: 5px 20px;
+        justify-content: space-around;
+    }
+    
+    .box_title i {
+        font-size: 1.3rem;
+        color: #272727;
+        letter-spacing: 0.6px;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    
+    .box_title .left {
+        display: flex;
+        flex-basis: 23%;
+        justify-content: flex-end;
+    }
+    
+    .box_title .right {
+        display: flex;
+        width: 50px;
+    }
+    
+    .main_box1 .boxs img {
+        width: 200px;
+        border-radius: 7px;
+        height: 250px;
+        box-shadow: 1px 0.8px 5px #9b9999;
     }
