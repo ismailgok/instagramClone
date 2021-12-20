@@ -292,4 +292,18 @@
         background: #fd0a;
         width: 100%;
         height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .main #main {
+        display: flex;
+        background: rgba(245, 50, 118, 0);
+        width: 75%;
+    }
+    
+    .main .main_profile {
+        display: flex;
+        width: 25%;
+        background: #f016;
     }
